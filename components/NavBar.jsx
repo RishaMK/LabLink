@@ -10,10 +10,10 @@ const NavBar = () => {
                 <span className='ml-8'><Link href='/'>company name</Link></span>
             </div>
             <ul className='flex pl-36'>
-                <li className='pl-4'><Link href='/listing'>listing</Link></li>
-                <li className='pl-4'><Link href='/reports'>reports</Link></li>
-                <li className='pl-4'><Link href='/stats'>stats</Link></li>
-                <li className='pl-4'><Link href='/teamInfo'>teamInfo</Link></li>
+                <li className='pl-4'><Link href='/Listings'>listing</Link></li>
+                <li className='pl-4'><Link href='/Reports'>reports</Link></li>
+                <li className='pl-4'><Link href='/Stats'>stats</Link></li>
+                <li className='pl-4'><Link href='/Team'>teamInfo</Link></li>
             </ul>
             <button className='border-2 border-black p-2'>Logout</button>
         </nav>

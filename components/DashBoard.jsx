@@ -6,7 +6,7 @@ const DashBoard = () => {
     return (
         <div className="flex justify-evenly h-screen">
             <div className="w-1/3"> <AdminDash /> </div>
-            <div className="bg-slate-500 w-2/3"><CardSelector /></div>
+            <div className="w-2/3"><CardSelector /></div>
         </div>
     )
 }
