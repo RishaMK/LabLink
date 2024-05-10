@@ -3,7 +3,7 @@ import CardTab from './CardTab'
 
 const CardSelector = () => {
   return (
-    <div className='w-full bg-blue-500 h-full flex-col flex items-center text-center justify-center'>
+    <div className='w-full bg-gray-100 h-full flex-col flex items-center text-center justify-center'>
       <div className='grid grid-cols-2 gap-x-16 gap-y-16'>
         <CardTab content="Listings"/>
         <CardTab content="Reports"/>

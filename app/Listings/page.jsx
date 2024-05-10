@@ -1,8 +1,9 @@
+import Link from 'next/link'
 import React from 'react'
 
 const page = () => {
     return (
-        <div className='pt-16 bg-yellow-300 h-[250vh]'>
+        <div className='pt-16 bg-yellow-300'>
             <div className=" bg-gray-100 mx-48 my-4" style={{ height: '96%' }}>
                 <h1 className='text-5xl items-center text-center pt-12 font-bold'>Research Center Name</h1>
                 <div className='flex'>
@@ -32,6 +33,23 @@ const page = () => {
                             <p className='ml-4 mb-8'>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
                         </li>
                     </ul>
+                </div>
+                <div className='flex-col'>
+                    <h1 className='text-2xl font-bold  ml-32 mt-24'>Reports</h1>
+                    <Link href='/ReportStatus/[id]' as="/ReportStatus/123">
+                        <div className='card pt-4'>
+                            <div className='h-48 bg-gray-100 m-8 p-4 border-2 border-gray-700 mx-32'>
+                                <h1 className='font-bold text-2xl mt-4'>Report_name</h1>
+                                <p className=' mb-4'>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                                <p className='font-bold text-lg'>Author_name</p>
+                            </div>
+                            <div className='h-48 bg-gray-100 m-8 p-4 border-2 border-gray-700 mx-32'>
+                                <h1 className='font-bold text-2xl mt-4'>Report_name</h1>
+                                <p className=' mb-4'>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                                <p className='font-bold text-lg'>Author_name</p>
+                            </div>
+                        </div>
+                    </Link>
                 </div>
                 <div className='flex-col text-center items-center'>
                     <h1 className='text-2xl font-bold mt-24'>Growth</h1>
