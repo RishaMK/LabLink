@@ -11,7 +11,7 @@ const NavBar = () => {
       <span className='font-bold text-2xl'><Link href='/'>VisionVent™</Link></span>
       </div>
         <ul className='flex gap-8 pl-36 text-white '>
-          <li className='font-bold test p-4'><Link href='/Listings'>Listing</Link></li>
+          <li className='font-bold test p-4'><Link href='/Center'>About Center</Link></li>
           <li className='font-bold test p-4'><Link href='/Reports'>Reports</Link></li>
           <li className='font-bold test p-4'><Link href='/Stats'>Stats</Link></li>
           <li className='font-bold test p-4'><Link href='/Team'>Team</Link></li>

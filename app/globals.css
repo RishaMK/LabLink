@@ -15,3 +15,8 @@
 .teamborder:hover{
     border:2px solid black;
 }
+
+.researcherbg{
+    background-image: url('../public/images/bg-researcher.jpg');
+    background-size: cover;
+}

@@ -1,18 +1,17 @@
 import Link from 'next/link'
 import React from 'react'
-import './cardTab.css';
 
-const CardTab = ({ content, desc}) => {
+const researcherCardTab = ({content,desc,urltext}) => {
   return (
     <div>
-      <Link href={`/${content}`}>
+      <Link href={`${urltext}`}>
         <div className="card ">
           <div className="content">
-          <h1 className="front font-bold bg-i text-3xl">
+          <h1 className="front font-bold bg-i text-2xl">
               {content}
             </h1>
             <div className="back">
-              <div className="flex justify-center items-center text-center text-white font-bold text-xl">
+              <div className="flex justify-center items-center text-center font-bold text-xl">
                 <h2>{desc}</h2>
               </div></div>
           </div>
@@ -22,4 +21,4 @@ const CardTab = ({ content, desc}) => {
   )
 }
 
-export default CardTab
+export default researcherCardTab

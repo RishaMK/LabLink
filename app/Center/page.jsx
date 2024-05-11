@@ -5,19 +5,18 @@ import NavBar from '@/components/NavBar'
 
 const page = () => {
     return (
-        <div>
+        <div className='mybgyum'>
             <NavBar />
-            <div className='pt-16 mybgyum h-full'>
+            <div className='pt-16 h-full'>
             <div className=" bg-gray-100 mx-48 my-4" style={{ height: '96%' }}>
                 <h1 className='text-5xl items-center text-center pt-12 font-bold'>Research Center Name</h1>
                 <div className='flex'>
                     <div className='flex-col justify-start ml-32 mt-36'>
-                        <h1 className='text-2xl font-bold'>Project name</h1>
                         < p className='w-[500px] mt-8'>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
                             Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
                         </p>
                     </div>
-                    <div className='h-80 mt-52 ml-14'>
+                    <div className='h-80 mt-44 ml-14'>
                         <img src='/images/resources.png' alt='growth' className='h-full' />
                     </div>
                 </div>
