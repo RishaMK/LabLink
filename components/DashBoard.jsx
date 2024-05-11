@@ -4,7 +4,7 @@ import CardSelector from './CardSelector'
 
 const DashBoard = () => {
     return (
-        <div className="flex justify-evenly h-screen">
+        <div className="flex justify-evenly h-screen bg-[#342e49]">
             <div className="w-1/3"> <AdminDash /> </div>
             <div className="w-2/3"><CardSelector /></div>
         </div>

@@ -1,0 +1,14 @@
+.admin-wel{
+    animation-duration: 1s;
+    animation-name: slidein;
+    color: white;
+}
+
+@keyframes slidein{
+    0%{
+        margin-left: 75%;
+    }
+    100%{
+        margin-left: 0%;
+    }
+}
