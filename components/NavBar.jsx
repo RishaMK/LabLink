@@ -5,7 +5,7 @@ import './navBar.css';
 const NavBar = () => {
   return (
     <div>
-      <nav className='w-full h-16 bg-black flex justify-around text-center items-center fixed top-0 left-0 text-white'>
+      <nav className='w-full h-16 bg-black flex justify-around text-center items-center fixed top-0 left-0 text-white z-[50]'>
       <div className='flex gap-4 text-center items-center'>
       <Link href='/'><div className="image"></div></Link>
       <span className='font-bold text-2xl'><Link href='/'>VisionVent™</Link></span>

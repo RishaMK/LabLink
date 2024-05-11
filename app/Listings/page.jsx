@@ -1,9 +1,13 @@
 import Link from 'next/link'
 import React from 'react'
+import ReportPage from '@/components/ReportPage'
+import NavBar from '@/components/NavBar'
 
 const page = () => {
     return (
-        <div className='pt-16 bg-yellow-300'>
+        <div>
+            <NavBar />
+            <div className='pt-16 mybgyum h-full'>
             <div className=" bg-gray-100 mx-48 my-4" style={{ height: '96%' }}>
                 <h1 className='text-5xl items-center text-center pt-12 font-bold'>Research Center Name</h1>
                 <div className='flex'>
@@ -20,36 +24,27 @@ const page = () => {
                 <div className='ml-32 mt-24'>
                     <h1 className='text-2xl font-bold mb-8'>Team</h1>
                     <ul className='ml-8 mr-36'>
-                        <li>
+                        <li className='teamborder p-4 pb-0'>
                             <p className='font-bold mb-[10px]'>John Doe  ||  TEAM LEAD</p>
                             <p className='ml-4 mb-8'>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
                         </li>
-                        <li>
+                        <li className='teamborder p-4 pb-0'>
                             <p className='font-bold mb-[10px]'>Jane Doe</p>
                             <p className='ml-4 mb-8'>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
                         </li>
-                        <li>
+                        <li className='teamborder p-4 pb-0'>
                             <p className='font-bold mb-[10px]'>John Doe</p>
                             <p className='ml-4 mb-8'>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
                         </li>
                     </ul>
                 </div>
-                <div className='flex-col'>
-                    <h1 className='text-2xl font-bold  ml-32 mt-24'>Reports</h1>
-                    <Link href='/ReportStatus/[id]' as="/ReportStatus/123">
-                        <div className='card pt-4'>
-                            <div className='h-48 bg-gray-100 m-8 p-4 border-2 border-gray-700 mx-32'>
-                                <h1 className='font-bold text-2xl mt-4'>Report_name</h1>
-                                <p className=' mb-4'>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-                                <p className='font-bold text-lg'>Author_name</p>
-                            </div>
-                            <div className='h-48 bg-gray-100 m-8 p-4 border-2 border-gray-700 mx-32'>
-                                <h1 className='font-bold text-2xl mt-4'>Report_name</h1>
-                                <p className=' mb-4'>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-                                <p className='font-bold text-lg'>Author_name</p>
-                            </div>
-                        </div>
-                    </Link>
+                <div className='flex-col justify-center items-center text-center'>
+                    <h1 className='text-2xl font-bold mt-24'>Reports</h1>
+                    
+                    <ReportPage rname='Mitochondria is the powerhouse of the cell' rauthor='Risha MK' rdesc='Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.' rtime='10:04'/>
+                    
+
+                    
                 </div>
                 <div className='flex-col text-center items-center'>
                     <h1 className='text-2xl font-bold mt-24'>Growth</h1>
@@ -59,6 +54,7 @@ const page = () => {
                     </div>
                 </div>
             </div>
+        </div>
         </div>
     )
 }

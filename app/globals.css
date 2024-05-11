@@ -2,3 +2,16 @@
 @tailwind components;
 @tailwind utilities;
 
+
+.mybgyum{
+    background-image: url('../public/images/bg-test.jpg');
+    background-size: cover;
+}
+
+.teamborder{
+    border:2px solid transparent;
+}
+
+.teamborder:hover{
+    border:2px solid black;
+}
