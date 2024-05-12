@@ -11,7 +11,7 @@ const NavBar = () => {
       <span className='font-bold text-2xl'><Link href='/Researcher/DashBoard'>VisionVent™</Link></span>
       </div>
         <ul className='flex gap-8 pl-36 text-white '>
-          <li className='font-bold test p-4'><Link href='/Researcher/SendReport'>Reports</Link></li>
+          <li className='font-bold test p-4'><Link href='/Researcher/ViewReports'>Reports</Link></li>
           <li className='font-bold test p-4'><Link href='/Researcher/ResearcherTeam'>Team</Link></li>
         </ul>
         <button className='border-2 border-white px-4 py-2 font-bold rounded-lg hover:bg-[#4e4e4f] duration-300 '>Logout</button>

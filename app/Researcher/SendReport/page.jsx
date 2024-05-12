@@ -3,28 +3,32 @@ import React, { useState } from 'react';
 import Link from 'next/link';
 import { useRouter } from 'next/navigation';
 import NavBar from '@/components/Researcher/NavBar';
+import axios from 'axios';
 
 const AddReport = () => {
-  const router = useRouter();
 
   const [title, setTitle] = useState('');
   const [description, setDescription] = useState('');
-  const [reports, setReports] = useState([]);
+  const [report, setReport] = useState('');
 
   const handleAddReport = (event) => {
     event.preventDefault();
     const newReport = { title, description };
-    setReports([...reports, newReport]);
+    setReport(newReport);
     setTitle('');
     setDescription('');
-    router.push('/reportdetails');
-  };
+  }
 
-  const handleDeleteReport = (index) => {
-    const updatedReports = [...reports];
-    updatedReports.splice(index, 1);
-    setReports(updatedReports);
-  };
+  const result = () => {
+    axios
+      .post('/api/getReports', report)
+      .then(()=>{Navigate('/Researcher/ViewReports')})
+      .catch((error) => {
+        alert("error!!");
+        console.log(error);
+      });
+  }
+
 
   return (
     <div className='researcherbg'>
