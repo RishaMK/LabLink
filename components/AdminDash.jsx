@@ -1,17 +1,19 @@
 import { Avatar } from '@mui/material'
-import { deepPurple } from '@mui/material/colors'
 import React from 'react'
+import './adminDash.css';
+import { deepPurple } from '@mui/material/colors';
+
 
 const AdminDash = () => {
   return (
-    <div className='w-full bg-orange-700 h-full flex-col flex items-center text-center justify-center'>
-        <div className="text-5xl">
-            <Avatar src='' alt='admin_img' sx={{width:80, height:80}}></Avatar>
+    <div className='w-full h-full flex-col flex items-center text-center justify-center bg-[#8bcbf5] text-black border-t-20 border-white'>
+        <div className="text-5xl admin-wel">
+            <Avatar src='' alt='admin_img' sx={{width:100, height:100, bgcolor: deepPurple[400], fontSize:'40px'}}>A</Avatar>
         </div>
         <br></br>
-        <div>
+        <div className='admin-wel'>
             <h1 className='font-bold text-3xl'>Welcome,</h1>
-            <h3>admin name</h3>
+            <h3 className='text-xl'>admin_name</h3>
         </div>
     </div>
   )
